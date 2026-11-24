@@ -1,168 +1,541 @@
-<<<<<<< HEAD
-# CampusFix AI — CA4 working release v2.6.0
+# CampusFix AI
 
-Multimodal campus maintenance reporting and resolution system with Student, Maintenance Worker and Admin roles. The release contains a React/Vite frontend, FastAPI backend, SQLAlchemy persistence, backend-controlled AI adapters, schema validation, independent verification, deterministic assignment/status rules, cost controls and audit endpoints.
+### A Multimodal, Multi-Model Intelligent Campus Complaint Detection, Verification and Resolution System
 
-## Included AI capabilities
+<p align="center">
+  <strong>Transforming Campus Maintenance Through Artificial Intelligence</strong>
+</p>
 
-| Modality | Provider / adapter | Behaviour |
-|---|---|---|
-| Text | Groq, Gemini, OpenRouter | Structured complaint classification; manual selection or automatic free-provider routing with ordered text failover |
-| Vision | Gemini | Image evidence description; content remains untrusted and requires human review |
-| Audio | Groq Whisper | Audio transcription; content remains untrusted and requires human review |
-| Documents | Local pypdf | Extracts embedded PDF text; scanned PDFs require OCR and are not supported by this adapter |
+<p align="center">
+  <img src="https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/TypeScript-Language-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vite-Build%20Tool-646CFF?logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-Backend%20Language-3776AB?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQLAlchemy-ORM-D71F00" />
+  <img src="https://img.shields.io/badge/AI-Multimodal-purple" />
+  <img src="https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black" />
+</p>
 
-No paid fallback is enabled. Provider model IDs, free quotas and account access may change. Keys are backend-only. Do not add keys to frontend `.env`, source control, screenshots or reports.
+---
 
-## 1. Backend setup — PowerShell terminal 1
+## 🖥️ Landing Page
 
-Open the extracted `campusfix-final` folder in VS Code. Then run each command from the backend directory:
+![CampusFix AI Landing Page](docs/screenshots/01-landing-page.png)
 
-```powershell
+---
+
+## 📌 Project Information
+
+**CampusFix AI** is an AI-powered campus maintenance complaint management platform designed to modernize how students report infrastructure and facility-related problems.
+
+Traditional campus maintenance processes often involve manual complaint reporting, delayed communication, inefficient task assignment and limited visibility into resolution progress.
+
+CampusFix AI addresses these challenges through multimodal artificial intelligence, intelligent complaint classification, role-based access control and a structured complaint resolution workflow.
+
+Students can submit complaints through text, images, audio recordings and PDF documents. AI models analyze the submitted information, identify potential maintenance issues and generate structured recommendations to assist complaint handling.
+
+The platform provides three dedicated role-based portals:
+
+- **Student Portal:** Submit complaints, review AI analysis and track resolution progress.
+- **Maintenance Worker Portal:** Receive assignments, manage maintenance tasks and upload completion evidence.
+- **Admin Portal:** Manage complaints, assign workers, verify resolutions and monitor campus maintenance operations.
+
+The system combines AI-assisted decision-making with human approval and verification to promote transparency, accountability and efficient campus maintenance.
+
+---
+
+## 📸 Application Screenshots
+
+### 1. Student Dashboard
+
+The student portal provides a centralized interface for submitting complaints, monitoring complaint status, reviewing previous requests and receiving updates.
+
+![CampusFix AI Student Dashboard](docs/screenshots/02-student-dashboard.png)
+
+### 2. Maintenance Worker Dashboard
+
+The maintenance worker portal helps staff manage assigned tasks, update maintenance progress, add resolution notes and submit completion evidence.
+
+![CampusFix AI Worker Dashboard](docs/screenshots/03-worker-dashboard.png)
+
+### 3. Admin Dashboard
+
+The administrator portal provides an overview of campus maintenance operations, complaint statistics, worker management, complaint assignments and resolution verification.
+
+![CampusFix AI Admin Dashboard](docs/screenshots/04-admin-dashboard.png)
+
+### 4. Multimodal AI Dashboard
+
+The multimodal interface enables users to submit complaints through different input formats and access supported AI analysis capabilities.
+
+Supported modalities:
+
+- Text-based complaint analysis
+- Image-based visual analysis
+- Audio transcription and analysis
+- PDF document extraction and analysis
+
+The interface also supports AI model selection and comparison where configured.
+
+![CampusFix AI Multimodal Dashboard](docs/screenshots/05-multimodal-dashboard.png)
+
+---
+
+## ✨ Key Features
+
+### 🤖 1. Multimodal Complaint Understanding
+
+CampusFix AI supports multiple complaint submission formats.
+
+| Modality | Description |
+|---|---|
+| Text | Understands written maintenance complaints |
+| Image | Analyzes uploaded images for visible infrastructure problems |
+| Audio | Processes voice recordings through speech transcription and complaint analysis |
+| PDF | Extracts relevant information from uploaded complaint documents |
+
+### 🧠 2. Multi-Model AI Integration
+
+The application integrates multiple AI providers to support model selection, analysis and comparison.
+
+**Supported providers:**
+
+- Groq
+- Google Gemini
+- OpenRouter
+
+The application is designed to use available free-tier model routes, with provider quota handling and deterministic fallback behavior where configured.
+
+### 📊 3. Intelligent Complaint Classification
+
+AI-assisted analysis can generate structured complaint information, including:
+
+- Complaint title and summary
+- Complaint category
+- Priority level
+- Recommended department
+- Relevant evidence
+- Missing information
+- Confidence information
+
+### 👨‍🎓 4. Student Portal
+
+- Submit campus maintenance complaints.
+- Upload images, audio and PDF documents.
+- Review AI-generated complaint information.
+- Edit and approve complaint details.
+- Track complaint progress.
+- View complaint history.
+- Receive status updates and notifications.
+
+### 🛠️ 5. Maintenance Worker Portal
+
+- View assigned maintenance complaints.
+- Accept or reject assignments.
+- Update task progress.
+- Add maintenance notes.
+- Upload resolution evidence.
+- Track pending and completed tasks.
+
+### 🛡️ 6. Admin Portal
+
+- Monitor campus maintenance activities.
+- View complaint statistics and analytics.
+- Manage students and maintenance workers.
+- Assign complaints to maintenance staff.
+- Review AI-generated analysis.
+- Verify resolution evidence.
+- Monitor complaint status.
+- Review audit logs and workflow activities.
+
+### 🔍 7. Human-in-the-Loop Verification
+
+AI-generated recommendations support decision-making rather than independently authorizing every important operation.
+
+The workflow incorporates student approval, administrator verification and role-based authorization.
+
+### 📋 8. Complaint Tracking and Audit Logs
+
+The application maintains complaint progress and records relevant workflow activities to improve transparency, accountability and traceability.
+
+---
+
+## 🏗️ System Architecture
+
+CampusFix AI follows a frontend-backend architecture with an AI integration layer and database persistence.
+
+```mermaid
+flowchart TD
+    A[Students / Workers / Admins] --> B[React Frontend]
+
+    B --> C[FastAPI Backend]
+
+    C --> D[Authentication and Authorization]
+    C --> E[Complaint Management]
+    C --> F[AI Orchestration Layer]
+
+    F --> G[Groq]
+    F --> H[Google Gemini]
+    F --> I[OpenRouter]
+
+    E --> J[(Database)]
+    D --> J
+
+    F --> K[Structured AI Results]
+    K --> E
+
+    E --> L[Student Portal]
+    E --> M[Worker Portal]
+    E --> N[Admin Portal]
+```
+
+### Complaint Resolution Workflow
+
+```mermaid
+flowchart TD
+    A[Student Submits Complaint] --> B[AI Complaint Analysis]
+    B --> C[Student Reviews AI Results]
+    C --> D[Complaint Approval]
+    D --> E[Admin Reviews Complaint]
+    E --> F[Worker Assignment]
+    F --> G[Worker Accepts Task]
+    G --> H[Maintenance in Progress]
+    H --> I[Worker Uploads Evidence]
+    I --> J[Admin Verifies Resolution]
+    J --> K[Student Receives Status Update]
+    K --> L[Audit Log Updated]
+```
+
+---
+
+## 🧰 Technology Stack
+
+| Layer | Technologies |
+|---|---|
+| Frontend | React, TypeScript |
+| Build Tool | Vite |
+| Styling | CSS, Tailwind CSS |
+| Backend | Python, FastAPI |
+| Database | SQLite for local development; PostgreSQL-compatible production configuration |
+| ORM | SQLAlchemy |
+| AI Providers | Groq, Google Gemini, OpenRouter |
+| Authentication | Token-based authentication |
+| API Documentation | FastAPI / Swagger UI |
+| Version Control | Git, GitHub |
+| Frontend Hosting | Vercel |
+| Backend Hosting | Render |
+
+---
+
+## 📂 Project Structure
+
+```text
+CampusFix-AI/
+│
+├── backend/
+│   ├── app/
+│   │   ├── main.py
+│   │   ├── database.py
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   └── ...
+│   │
+│   ├── seed_synthetic_data.py
+│   ├── requirements.txt
+│   └── ...
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── App.tsx
+│   │   └── ...
+│   │
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── docs/
+│   └── screenshots/
+│       ├── 01-landing-page.png
+│       ├── 02-student-dashboard.png
+│       ├── 03-worker-dashboard.png
+│       ├── 04-admin-dashboard.png
+│       └── 05-multimodal-dashboard.png
+│
+├── README.md
+└── ...
+```
+
+*This is an illustrative structure. Keep the actual directory names and files from your repository if they differ.*
+
+---
+
+## ⚙️ Installation and Local Setup
+
+### Prerequisites
+
+Install the following software:
+
+- Python 3.10 or later
+- Node.js and npm
+- Git
+- VS Code or another code editor
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Lakshith-P/CampusFix-AI.git
+
+cd CampusFix-AI
+```
+
+### 2. Backend Setup
+
+Navigate to the backend directory:
+
+```bash
 cd backend
-python -m venv .venv
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-.\.venv\Scripts\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-Copy-Item .env.example .env
-notepad .env
 ```
 
-Paste your own provider keys into `backend/.env` using the exact variable names already shown there. Save the file. Do not paste keys into this chat. If `.env` already exists, do not overwrite it with `Copy-Item`; open it with `notepad .env` instead. The settings loader reads `.env` relative to the backend working directory, so start the API from `backend/`.
+Create a Python virtual environment:
 
-Seed fictional demo users and complaints:
-
-```powershell
-python seed_synthetic_data.py
+```bash
+python -m venv venv
 ```
 
-Run the API:
+Activate it on Windows PowerShell:
 
 ```powershell
-python -m uvicorn app.main:app --reload
+.\venv\Scripts\Activate.ps1
 ```
 
-Backend health: http://127.0.0.1:8000/health  
-API docs: http://127.0.0.1:8000/docs
+Install the dependencies:
 
-## 2. Frontend setup — PowerShell terminal 2
+```bash
+pip install -r requirements.txt
+```
 
-Open a second terminal at the extracted project root:
+### 3. Configure Backend Environment Variables
 
-```powershell
+Create a `.env` file inside the backend directory.
+
+```env
+DATABASE_URL=sqlite:///./campusfix.db
+
+GROQ_API_KEY=your_groq_api_key
+GEMINI_API_KEY=your_gemini_api_key
+OPENROUTER_API_KEY=your_openrouter_api_key
+```
+
+Add any additional environment variables required by your current backend configuration.
+
+**Security note:** Never upload `.env` files, API keys, passwords or authentication secrets to GitHub. Keep provider credentials on the backend.
+
+### 4. Start the Backend
+
+Run:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+Backend URL:
+
+```text
+http://127.0.0.1:8000
+```
+
+API documentation:
+
+```text
+http://127.0.0.1:8000/docs
+```
+
+Health check:
+
+```text
+http://127.0.0.1:8000/health
+```
+
+### 5. Frontend Setup
+
+Open another terminal and navigate to the frontend directory:
+
+```bash
 cd frontend
-Copy-Item .env.example .env
-npm.cmd ci
-npm.cmd run dev
 ```
 
-If `frontend/.env` already exists, do not overwrite it; confirm it contains `VITE_API_URL=http://127.0.0.1:8000`. Open http://localhost:5173.
+Install frontend dependencies:
 
-If Rollup's native module is blocked by Windows Application Control, retain the WASM Rollup override in `package.json` and run `npm.cmd install` rather than trying to bypass the device security policy.
-
-## 3. Admin AI Studio
-
-Sign in with an Admin account and open **AI Studio**. Select Text, Vision, Audio or Documents. Manual mode uses the selected compatible provider/model. Automatic text mode tries configured free providers in order and logs failed attempts; vision and audio have one configured provider adapter each. Text model comparison is available when two text providers are configured. PDF processing uses local pypdf, not a cloud model. Upload the correct file type for the selected modality.
-
-The provider readiness panel shows whether backend environment variables were detected; it does not prove that a key is valid, that a model is available, or that free quota remains. A live request is required to verify those things.
-
-## 4. Tests and build verification
-
-From `backend/`:
-
-```powershell
-python -m compileall -q app tests
-python -m pytest -q
+```bash
+npm install
 ```
 
-Expected for this source release: **28 backend tests pass**. Record the actual result when you run it.
+Create a `.env` file inside the frontend directory:
 
-From `frontend/`:
-
-```powershell
-npm.cmd run build
+```env
+VITE_API_URL=http://127.0.0.1:8000
 ```
 
-The frontend production build was not verified in the packaging environment; run it locally and save the terminal output. Live provider calls also require your configured keys and have not been verified by this package build.
+Start the frontend:
 
-## 5. Demo accounts
+```bash
+npm run dev
+```
 
-Run `python seed_synthetic_data.py` first. The seed script creates fictional demo users. Check `backend/seed_synthetic_data.py` for the current credentials; change demo passwords before any public deployment.
+Frontend URL:
 
-## 6. CA4 phase and evaluation status
+```text
+http://localhost:5173
+```
 
-Read:
-- `docs/CA4_PHASE_MAPPING.md` — honest phase-by-phase implementation and remaining evidence.
-- `docs/EVALUATION_EVIDENCE_PACK.md` — all ten required evaluation scenarios and evidence fields.
-- `docs/REPORT_OUTLINE.md` — report structure.
-- `docs/PROMPT_CATALOGUE.md` — prompt strategy.
-- `docs/DEPLOYMENT_NIMBUS.md` — Nimbus deployment steps.
-- `docs/FINAL_HANDOFF_CHECKLIST.md` — submission checklist.
+---
 
-This release does **not** claim that all phases are complete. Faculty approval (Phase 1), live integration/evaluation evidence (especially Phase 13), and final measured report/viva evidence (Phase 15) still require your actions. **Phase 14 must be deployed and verified on ByteXL Nimbus** as required by the official brief; Vercel/Render alone is not a substitute unless faculty approves it in writing.
+## 🔐 AI Provider Configuration
 
-## 7. Security and packaging
+CampusFix AI integrates multiple AI providers through backend services.
 
-The distributable ZIP intentionally excludes `.env`, databases, uploads, `.venv`, `node_modules`, `.git` and caches. Create your local `.env` from `.env.example`. Rotate any keys that were previously placed in an archive or committed to Git. The bundled campus dataset is synthetic and must be identified as synthetic in your report.
+| Provider | Purpose |
+|---|---|
+| Groq | AI inference and supported audio processing |
+| Google Gemini | Multimodal analysis and document understanding |
+| OpenRouter | Access to supported model routes |
 
+Configure API credentials through backend environment variables.
 
-## v2.4.0 multimodal role and image-routing fixes
+Provider availability, supported models and request limits depend on the selected models and their current provider quotas.
 
-- Student complaint submission now exposes explicit text, photo, audio and PDF input choices, including browser voice recording. Text description can be combined with the selected attachment.
-- Assigned maintenance workers can upload photo/audio/PDF evidence from their work-order row. The backend extracts evidence, stores the attachment and records an audit event; it does not automatically mark work complete.
-- Image extraction now receives the student's optional context and asks the vision adapter to distinguish water dripping from an AC unit (HVAC) from a visible plumbing-pipe leak.
-- AC-associated water leakage is protected by a deterministic HVAC routing rule and always remains flagged for human review.
-- AI Studio repairs the provider/model selection race when the user switches modalities before the provider catalog has loaded.
-- `audio/webm` is accepted by the student and worker evidence endpoints.
+Never expose provider credentials in frontend code or public repositories.
 
-Provider-backed image/audio execution still requires valid provider keys in `backend/.env`, a model ID enabled for that account, and available provider quota. The automated tests do not replace a live Gemini/Groq request.
+---
 
-## v2.5.0 reliability fixes
+## 🚀 Deployment
 
-- Outbound Groq/Gemini/OpenRouter HTTPX calls now use the operating-system certificate trust store through `truststore` where available. TLS verification stays enabled. For an approved campus proxy CA not present in the OS store, set `CAMPUSFIX_CA_BUNDLE` in `backend/.env` to the PEM certificate-chain path.
-- Compare mode is now triggered by the execution-mode selector and reports per-provider success/failure so one failed model does not hide the other model's result.
-- Admin worker choices are limited to active, available workers and filtered by complaint specialization in the UI; the backend remains authoritative and rejects incompatible assignments.
-- PDF extraction now reports encrypted PDFs and scanned/image-only PDFs explicitly. Scanned PDFs require OCR and are not falsely reported as extracted.
-- Provider/model selectors use a compatible fallback selection to avoid blank controlled dropdown values during modality changes/catalog loading.
+### Frontend Deployment — Vercel
 
-Run `python -m pytest -q` from `backend`. Live provider calls, browser build, certificate trust in your Windows network, and Nimbus deployment must still be verified in the target environment.
+The React frontend can be deployed using Vercel.
 
+Recommended configuration:
 
-## v2.6.0 role-workspace expansion
+| Setting | Value |
+|---|---|
+| Framework | Vite |
+| Root Directory | `frontend` |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
 
-- Student reporting now exposes Text, Vision, Audio and Documents directly in the student portal. Text-only reports use the text classification endpoint; image/audio/PDF reports use the multimodal extraction workflow. Audio mode includes browser recording and uploads the resulting audio blob to the backend.
-- Admin navigation now includes functional API-backed Accounts & Access, AI Monitoring, AI Usage & Budget, Worker Management and Audit Logs pages, plus a CA4 Evaluation Centre checklist. Role changes call the protected administrator endpoint.
-- The optional custom CA bundle is read from backend `.env` settings as well as the process environment. TLS certificate verification remains enabled.
-- Backend verification in the packaging environment: `python -m pytest -q` — 31 passed. The frontend production build could not be verified in this packaging environment because the dependency installation did not complete; run `npm.cmd ci` and `npm.cmd run build` on the Windows development machine.
+Configure the frontend environment variable:
 
-## Important implementation boundaries
+```env
+VITE_API_URL=https://your-backend-url.onrender.com
+```
 
-- Provider readiness only means a key is present. Live provider/model availability, quotas, organization TLS trust and actual image/audio interpretation must be tested using your own keys and network.
-- PDF extraction supports text-based PDFs. Scanned/image-only PDFs are explicitly reported as requiring OCR; OCR is not claimed as implemented in this release.
-- Text model comparison is supported. Vision and audio currently use their compatible single-provider adapters; they do not claim multi-model comparison.
-- The Evaluation Centre lists all ten CA4 scenarios, while actual evidence must be generated by running each scenario and recording screenshots/logs.
-- Phase 1 faculty approval, complete Phase 13 evidence, Phase 14 Nimbus deployment and Phase 15 final report/viva remain external or evidence-dependent.
+Ensure the backend CORS configuration allows requests from the deployed frontend domain.
 
+### Backend Deployment — Render
 
-## Final submission documents
+Deploy the FastAPI backend as a Render Web Service.
 
-- `docs/FINAL_PROJECT_REPORT.md` — evidence-based CA4 report draft.
-- `docs/VIVA_PREPARATION.md` — viva questions and answers.
-- `docs/FINAL_SUBMISSION_CHECKLIST.md` — remaining verification and submission checklist.
+Recommended configuration:
 
-These documents distinguish implemented code from unverified live-provider, frontend-build, evaluation-evidence and Nimbus deployment work.
+| Setting | Value |
+|---|---|
+| Runtime | Python |
+| Root Directory | `backend` |
+| Build Command | `pip install -r requirements.txt` |
+| Start Command | `uvicorn app.main:app --host 0.0.0.0 --port $PORT` |
 
-## v2.8.0 UI and role access update
-See `docs/RELEASE_NOTES_v2.8.0.md` for included changes, verification, and remaining limitations. In particular, text comparison is currently supported, while vision/audio/document multi-provider comparison and per-submission provider controls remain unfinished.
+Configure the required backend environment variables through the Render dashboard.
 
+**Production database:** Local SQLite and production database configurations should be managed separately. SQLite on an ephemeral Render filesystem is not suitable for persistent production data. Use persistent storage or a managed database for production.
 
-## v2.9.0 update
-See `docs/RELEASE_NOTES_v2.9.0.md` for the Power BI-inspired admin analytics board, multimodal staged comparison, Gemini audio/PDF extraction and explicit verification status.
+---
 
-## v2.10.0 inline AI selection update
-Student complaint submission and worker evidence forms now expose Manual, Automatic and Compare AI controls. See `docs/RELEASE_NOTES_v2.10.0.md` for exact routing behavior, provider requirements and verification limits.
-=======
-# CampusFix-AI
-AI-powered multimodal campus complaint management system featuring intelligent complaint detection, multi-model verification, role-based workflows, and automated maintenance resolution.
->>>>>>> 7633e847c6695374f29b779a3f4f8d5b6c41c879
+## 🧪 Testing and Evaluation
+
+The application can be evaluated across the following areas:
+
+| Test Area | Evaluation Objective |
+|---|---|
+| Text Complaint | Verify complaint understanding |
+| Image Analysis | Identify visible maintenance problems |
+| Audio Processing | Verify transcription and complaint analysis |
+| PDF Extraction | Extract relevant information from documents |
+| Model Comparison | Compare supported model outputs |
+| Complaint Classification | Evaluate category and priority recommendations |
+| Authorization | Verify role-based access |
+| Complaint Assignment | Verify administrator-to-worker assignment |
+| Resolution Verification | Verify evidence and administrator approval |
+| Audit Logging | Verify workflow activity records |
+
+Testing should be documented with actual inputs, expected outputs, observed results and supporting evidence.
+
+---
+
+## 🔒 Security and Reliability
+
+The system incorporates the following security considerations:
+
+- Backend-only AI provider credentials.
+- Authentication for protected operations.
+- Role-based access control.
+- Input validation and structured AI responses.
+- Human approval for important workflow decisions.
+- Audit logging for relevant activities.
+- Provider error and quota handling.
+
+---
+
+## 🎯 Project Objectives
+
+1. Simplify campus maintenance complaint submission.
+2. Enable multimodal complaint understanding.
+3. Improve complaint classification and prioritization.
+4. Support efficient maintenance task assignment.
+5. Introduce AI-assisted verification and human oversight.
+6. Improve campus maintenance transparency through complaint tracking and audit logs.
+
+---
+
+## 🔮 Future Enhancements
+
+- Real-time notifications and communication.
+- Advanced campus maintenance analytics.
+- Improved multimodal model evaluation.
+- Automated SLA monitoring and escalation.
+- Mobile-friendly complaint reporting.
+- Enhanced AI evaluation and observability.
+- Additional campus infrastructure integrations.
+
+---
+
+## 👨‍💻 Project Information
+
+| Field | Details |
+|---|---|
+| Project Name | CampusFix AI |
+| Project Category | Generative AI / Full-Stack Application / Smart Campus |
+| Frontend | React + TypeScript + Vite |
+| Backend | Python + FastAPI |
+| AI Integration | Groq, Gemini, OpenRouter |
+| Repository | [CampusFix-AI](https://github.com/Lakshith-P/CampusFix-AI) |
+| Frontend Hosting | Vercel |
+| Backend Hosting | Render |
+
+---
+
+## 📄 License
+
+This project is developed for academic and educational purposes. Add an appropriate open-source license if you intend to distribute the project under specific reuse terms.
+
+---
+
+<p align="center">
+  <strong>CampusFix AI</strong>
+  <br />
+  Smarter Campus. Faster Resolution. Better Experience.
+</p>
