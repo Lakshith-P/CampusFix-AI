@@ -1,6 +1,16 @@
 import ThreeHero from './ThreeHero';
 import{useEffect,useState}from'react';import{motion}from'framer-motion';import{ArrowRight,Building2,CheckCircle2,Clock3,ClipboardList,LogOut,Plus,Sparkles,Wrench,Activity,ShieldCheck}from'lucide-react';import{api,signIn,signUp,token}from'./api';import{ResponsiveContainer,BarChart,Bar,XAxis,YAxis,Tooltip,CartesianGrid,PieChart,Pie,Cell,LineChart,Line,Legend}from'recharts';
-type User={id:number;name:string;email:string;role:string};type Complaint={id:number;title:string;category:string;priority:string;status:string;location:string;created_at:string};
+type User={id:number;name:string;email:string;role:string};type Complaint = {
+  id: number;
+  title: string;
+  category: string;
+  priority: string;
+  status: string;
+  location: string;
+  created_at: string;
+  ai_review_required?: boolean;
+  description?: string;
+};
 export default function App(){const[u,U]=useState<User|null>(null),[mode,M]=useState('home'),[err,E]=useState(''),[items,I]=useState<Complaint[]>([]),[metrics,Q]=useState<any>(null),[newOpen,N]=useState(false);useEffect(()=>{if(token())api('/auth/me').then(U).catch(()=>localStorage.removeItem('campusfix_token'))},[]);useEffect(()=>{if(u){api('/complaints').then(I).catch(x=>E(x.message));if(u.role==='admin')api('/admin/metrics').then(Q).catch(x=>E(x.message))}},[u]);
 async function auth(e:any){e.preventDefault();E('');const f=new FormData(e.currentTarget);try{if(mode==='register')await signUp(String(f.get('name')),String(f.get('email')),String(f.get('password')));U(await signIn(String(f.get('email')),String(f.get('password'))))}catch(x:any){E(x.message)}}
 function out(){localStorage.removeItem('campusfix_token');U(null);M('home')}
