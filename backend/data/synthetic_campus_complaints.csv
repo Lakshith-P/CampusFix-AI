@@ -1,0 +1,101 @@
+synthetic_id,title,description,category,priority,location,status,reporter_email,assigned_worker_email,ai_confidence,is_synthetic
+SYNTH-001,SYNTH-001 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",submitted,student3@gmail.com,,0.79,true
+SYNTH-002,SYNTH-002 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",completed,student5@gmail.com,worker2@gmail.com,0.74,true
+SYNTH-003,SYNTH-003 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,submitted,student1@gmail.com,,0.78,true
+SYNTH-004,SYNTH-004 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",in_progress,student5@gmail.com,worker4@gmail.com,0.77,true
+SYNTH-005,SYNTH-005 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",accepted,student4@gmail.com,worker5@gmail.com,0.88,true
+SYNTH-006,SYNTH-006 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student2@gmail.com,worker6@gmail.com,0.91,true
+SYNTH-007,SYNTH-007 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",assigned,student2@gmail.com,worker7@gmail.com,0.98,true
+SYNTH-008,SYNTH-008 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",submitted,student4@gmail.com,,0.75,true
+SYNTH-009,SYNTH-009 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",in_progress,student1@gmail.com,worker1@gmail.com,0.92,true
+SYNTH-010,SYNTH-010 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",submitted,student4@gmail.com,,0.74,true
+SYNTH-011,SYNTH-011 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,completed,student5@gmail.com,worker3@gmail.com,0.96,true
+SYNTH-012,SYNTH-012 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",in_progress,student1@gmail.com,worker4@gmail.com,0.73,true
+SYNTH-013,SYNTH-013 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",completed,student1@gmail.com,worker5@gmail.com,0.95,true
+SYNTH-014,SYNTH-014 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",accepted,student4@gmail.com,worker6@gmail.com,0.89,true
+SYNTH-015,SYNTH-015 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",submitted,student3@gmail.com,,0.78,true
+SYNTH-016,SYNTH-016 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,completed,student1@gmail.com,worker8@gmail.com,0.88,true
+SYNTH-017,SYNTH-017 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",in_progress,student2@gmail.com,worker1@gmail.com,0.76,true
+SYNTH-018,SYNTH-018 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,assigned,student5@gmail.com,worker2@gmail.com,0.78,true
+SYNTH-019,SYNTH-019 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",completed,student1@gmail.com,worker3@gmail.com,0.78,true
+SYNTH-020,SYNTH-020 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student4@gmail.com,worker4@gmail.com,0.79,true
+SYNTH-021,SYNTH-021 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",completed,student5@gmail.com,worker5@gmail.com,0.96,true
+SYNTH-022,SYNTH-022 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",assigned,student4@gmail.com,worker6@gmail.com,0.83,true
+SYNTH-023,SYNTH-023 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",submitted,student2@gmail.com,,0.79,true
+SYNTH-024,SYNTH-024 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",in_progress,student5@gmail.com,worker8@gmail.com,0.84,true
+SYNTH-025,SYNTH-025 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",accepted,student2@gmail.com,worker1@gmail.com,0.99,true
+SYNTH-026,SYNTH-026 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",in_progress,student1@gmail.com,worker2@gmail.com,0.92,true
+SYNTH-027,SYNTH-027 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",submitted,student2@gmail.com,,0.93,true
+SYNTH-028,SYNTH-028 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,in_progress,student4@gmail.com,worker4@gmail.com,0.82,true
+SYNTH-029,SYNTH-029 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",in_progress,student5@gmail.com,worker5@gmail.com,0.95,true
+SYNTH-030,SYNTH-030 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student1@gmail.com,worker6@gmail.com,0.9,true
+SYNTH-031,SYNTH-031 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",completed,student3@gmail.com,worker7@gmail.com,0.75,true
+SYNTH-032,SYNTH-032 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,submitted,student1@gmail.com,,0.98,true
+SYNTH-033,SYNTH-033 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,reopened,student2@gmail.com,worker1@gmail.com,0.86,true
+SYNTH-034,SYNTH-034 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",completed,student3@gmail.com,worker2@gmail.com,0.95,true
+SYNTH-035,SYNTH-035 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",in_progress,student2@gmail.com,worker3@gmail.com,0.82,true
+SYNTH-036,SYNTH-036 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",in_progress,student5@gmail.com,worker4@gmail.com,0.97,true
+SYNTH-037,SYNTH-037 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",assigned,student1@gmail.com,worker5@gmail.com,0.75,true
+SYNTH-038,SYNTH-038 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",completed,student3@gmail.com,worker6@gmail.com,0.78,true
+SYNTH-039,SYNTH-039 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",completed,student1@gmail.com,worker7@gmail.com,0.74,true
+SYNTH-040,SYNTH-040 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",completed,student5@gmail.com,worker8@gmail.com,0.93,true
+SYNTH-041,SYNTH-041 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",completed,student5@gmail.com,worker1@gmail.com,0.76,true
+SYNTH-042,SYNTH-042 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",completed,student4@gmail.com,worker2@gmail.com,0.98,true
+SYNTH-043,SYNTH-043 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",completed,student2@gmail.com,worker3@gmail.com,0.91,true
+SYNTH-044,SYNTH-044 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,reopened,student3@gmail.com,worker4@gmail.com,0.84,true
+SYNTH-045,SYNTH-045 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",accepted,student2@gmail.com,worker5@gmail.com,0.78,true
+SYNTH-046,SYNTH-046 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",submitted,student5@gmail.com,,0.78,true
+SYNTH-047,SYNTH-047 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",submitted,student1@gmail.com,,0.78,true
+SYNTH-048,SYNTH-048 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student1@gmail.com,worker8@gmail.com,0.86,true
+SYNTH-049,SYNTH-049 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,completed,student2@gmail.com,worker1@gmail.com,0.87,true
+SYNTH-050,SYNTH-050 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",in_progress,student2@gmail.com,worker2@gmail.com,0.93,true
+SYNTH-051,SYNTH-051 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,assigned,student1@gmail.com,worker3@gmail.com,0.9,true
+SYNTH-052,SYNTH-052 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",accepted,student4@gmail.com,worker4@gmail.com,0.95,true
+SYNTH-053,SYNTH-053 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student1@gmail.com,worker5@gmail.com,0.74,true
+SYNTH-054,SYNTH-054 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",completed,student1@gmail.com,worker6@gmail.com,0.79,true
+SYNTH-055,SYNTH-055 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",in_progress,student2@gmail.com,worker7@gmail.com,0.83,true
+SYNTH-056,SYNTH-056 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,accepted,student1@gmail.com,worker8@gmail.com,0.84,true
+SYNTH-057,SYNTH-057 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",submitted,student5@gmail.com,,0.95,true
+SYNTH-058,SYNTH-058 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",completed,student2@gmail.com,worker2@gmail.com,0.76,true
+SYNTH-059,SYNTH-059 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",accepted,student4@gmail.com,worker3@gmail.com,0.96,true
+SYNTH-060,SYNTH-060 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",assigned,student4@gmail.com,worker4@gmail.com,0.79,true
+SYNTH-061,SYNTH-061 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",assigned,student5@gmail.com,worker5@gmail.com,0.9,true
+SYNTH-062,SYNTH-062 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",submitted,student3@gmail.com,,0.78,true
+SYNTH-063,SYNTH-063 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",in_progress,student5@gmail.com,worker7@gmail.com,0.74,true
+SYNTH-064,SYNTH-064 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",submitted,student5@gmail.com,,0.85,true
+SYNTH-065,SYNTH-065 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",submitted,student5@gmail.com,,0.74,true
+SYNTH-066,SYNTH-066 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",submitted,student1@gmail.com,,0.9,true
+SYNTH-067,SYNTH-067 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",accepted,student5@gmail.com,worker3@gmail.com,0.79,true
+SYNTH-068,SYNTH-068 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",submitted,student1@gmail.com,,0.83,true
+SYNTH-069,SYNTH-069 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",in_progress,student3@gmail.com,worker5@gmail.com,0.97,true
+SYNTH-070,SYNTH-070 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",completed,student3@gmail.com,worker6@gmail.com,0.78,true
+SYNTH-071,SYNTH-071 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,submitted,student3@gmail.com,,0.84,true
+SYNTH-072,SYNTH-072 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",submitted,student5@gmail.com,,0.99,true
+SYNTH-073,SYNTH-073 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",submitted,student2@gmail.com,,0.86,true
+SYNTH-074,SYNTH-074 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",completed,student1@gmail.com,worker2@gmail.com,0.96,true
+SYNTH-075,SYNTH-075 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",assigned,student4@gmail.com,worker3@gmail.com,0.95,true
+SYNTH-076,SYNTH-076 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,in_progress,student5@gmail.com,worker4@gmail.com,0.72,true
+SYNTH-077,SYNTH-077 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",assigned,student1@gmail.com,worker5@gmail.com,0.97,true
+SYNTH-078,SYNTH-078 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",assigned,student1@gmail.com,worker6@gmail.com,0.92,true
+SYNTH-079,SYNTH-079 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",assigned,student5@gmail.com,worker7@gmail.com,0.78,true
+SYNTH-080,SYNTH-080 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",assigned,student3@gmail.com,worker8@gmail.com,0.86,true
+SYNTH-081,SYNTH-081 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,completed,student1@gmail.com,worker1@gmail.com,0.74,true
+SYNTH-082,SYNTH-082 · Air conditioner issue,The air conditioner is not cooling the seminar room.,Facilities,medium,Seminar Hall,completed,student1@gmail.com,worker2@gmail.com,0.72,true
+SYNTH-083,SYNTH-083 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",in_progress,student3@gmail.com,worker3@gmail.com,0.76,true
+SYNTH-084,SYNTH-084 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",in_progress,student4@gmail.com,worker4@gmail.com,0.87,true
+SYNTH-085,SYNTH-085 · Projector not working,The classroom projector does not turn on during lectures.,IT / Network,medium,"Block A, Room 204",submitted,student2@gmail.com,,0.87,true
+SYNTH-086,SYNTH-086 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",in_progress,student2@gmail.com,worker6@gmail.com,0.84,true
+SYNTH-087,SYNTH-087 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",assigned,student1@gmail.com,worker7@gmail.com,0.96,true
+SYNTH-088,SYNTH-088 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",completed,student1@gmail.com,worker8@gmail.com,0.82,true
+SYNTH-089,SYNTH-089 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",completed,student4@gmail.com,worker1@gmail.com,0.98,true
+SYNTH-090,SYNTH-090 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",completed,student2@gmail.com,worker2@gmail.com,0.95,true
+SYNTH-091,SYNTH-091 · Broken corridor light,The corridor light is flickering and the area is dark after 6 PM.,Electrical / Safety,high,"Library, East Corridor",completed,student1@gmail.com,worker3@gmail.com,0.77,true
+SYNTH-092,SYNTH-092 · Broken classroom chair,Several chairs have loose screws and are unsafe to use.,Facilities,low,"Block D, Room 110",completed,student4@gmail.com,worker4@gmail.com,0.94,true
+SYNTH-093,SYNTH-093 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",assigned,student1@gmail.com,worker5@gmail.com,0.82,true
+SYNTH-094,SYNTH-094 · Water leakage near washroom,Water is leaking from a pipe near the second floor washroom.,Plumbing,high,"Academic Block B, Floor 2",completed,student2@gmail.com,worker6@gmail.com,0.77,true
+SYNTH-095,SYNTH-095 · Exposed electrical wire,An exposed wire is visible beside the staircase.,Electrical / Safety,high,"Block C, Staircase 1",assigned,student2@gmail.com,worker7@gmail.com,0.78,true
+SYNTH-096,SYNTH-096 · Overflowing dustbin,Waste bin has not been cleared and there is a bad smell.,Sanitation,medium,"Hostel C, Ground Floor",accepted,student3@gmail.com,worker8@gmail.com,0.95,true
+SYNTH-097,SYNTH-097 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,assigned,student5@gmail.com,worker1@gmail.com,0.83,true
+SYNTH-098,SYNTH-098 · Tap water not stopping,The tap keeps running even when closed tightly.,Plumbing,low,"Hostel A, Floor 1",assigned,student1@gmail.com,worker2@gmail.com,0.75,true
+SYNTH-099,SYNTH-099 · Wi-Fi unavailable,Campus Wi-Fi is disconnected in the computer lab.,IT / Network,high,Computer Lab 3,submitted,student3@gmail.com,,0.73,true
+SYNTH-100,SYNTH-100 · Washroom cleaning required,The washroom needs cleaning and replenishment of supplies.,Sanitation,medium,"Admin Building, Floor 1",accepted,student3@gmail.com,worker4@gmail.com,0.84,true

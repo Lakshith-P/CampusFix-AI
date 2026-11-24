@@ -1,0 +1,41 @@
+text,category,priority
+Sparks from exposed wire near laboratory,Electrical/Safety,urgent
+Burning smell from electrical panel,Electrical/Safety,urgent
+Classroom lights are not working,Electrical/Safety,medium
+Ceiling fan stopped working in room 204,Electrical/Safety,medium
+Electric socket is loose and unsafe,Electrical/Safety,high
+Power keeps tripping in the computer lab,Electrical/Safety,high
+Street light near hostel gate is off,Electrical/Safety,medium
+Air conditioner has stopped cooling,Electrical/Safety,low
+Water pipe leaking in Block B corridor,Plumbing,high
+Washroom tap is broken and dripping,Plumbing,medium
+No water supply on third floor,Plumbing,high
+Flooding near drinking water station,Plumbing,urgent
+Drain is blocked near the canteen,Plumbing,high
+Water cooler is not dispensing water,Plumbing,medium
+Bathroom flush is not working,Plumbing,medium
+Low water pressure in hostel showers,Plumbing,medium
+Garbage bins are overflowing near hostel,Sanitation,high
+Washroom needs urgent cleaning,Sanitation,high
+Bad smell from the corridor dustbin,Sanitation,medium
+Classroom has not been cleaned,Sanitation,low
+Pest issue reported in dining area,Sanitation,high
+Waste collection was missed today,Sanitation,medium
+Toilet floor is dirty and slippery,Sanitation,high
+Food waste scattered near canteen,Sanitation,medium
+Campus WiFi is not connecting in library,IT/Network,medium
+Internet is down in computer lab,IT/Network,high
+Projector cannot connect to classroom PC,IT/Network,medium
+Student portal is not loading,IT/Network,high
+Network is slow in academic block,IT/Network,low
+Printer is offline in admin office,IT/Network,low
+LAN port is not working in lab,IT/Network,medium
+Biometric attendance device is offline,IT/Network,medium
+Broken desk in lecture hall,Facilities,low
+Classroom door lock is damaged,Facilities,medium
+Lift is not working in academic block,Facilities,high
+Window glass is cracked near staircase,Facilities,high
+Water seepage on classroom ceiling,Facilities,high
+Pathway tile is loose near entrance,Facilities,medium
+Hostel room cupboard hinge is broken,Facilities,low
+Parking area barrier is stuck,Facilities,medium
