@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CampusFix AI — CA4 working release v2.6.0
 
 Multimodal campus maintenance reporting and resolution system with Student, Maintenance Worker and Admin roles. The release contains a React/Vite frontend, FastAPI backend, SQLAlchemy persistence, backend-controlled AI adapters, schema validation, independent verification, deterministic assignment/status rules, cost controls and audit endpoints.
@@ -161,3 +162,7 @@ See `docs/RELEASE_NOTES_v2.9.0.md` for the Power BI-inspired admin analytics boa
 
 ## v2.10.0 inline AI selection update
 Student complaint submission and worker evidence forms now expose Manual, Automatic and Compare AI controls. See `docs/RELEASE_NOTES_v2.10.0.md` for exact routing behavior, provider requirements and verification limits.
+=======
+# CampusFix-AI
+AI-powered multimodal campus complaint management system featuring intelligent complaint detection, multi-model verification, role-based workflows, and automated maintenance resolution.
+>>>>>>> 7633e847c6695374f29b779a3f4f8d5b6c41c879
